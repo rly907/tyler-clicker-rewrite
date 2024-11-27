@@ -48,12 +48,16 @@
             gambleBtn = new Button();
             trackBar1 = new TrackBar();
             skinLbl = new Label();
+            pictureBox5 = new PictureBox();
+            label1 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // webView21
@@ -79,6 +83,7 @@
             labelScore.Size = new Size(36, 39);
             labelScore.TabIndex = 2;
             labelScore.Text = "0";
+            labelScore.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // multBtn
             // 
@@ -239,11 +244,52 @@
             skinLbl.TabIndex = 16;
             skinLbl.Text = "100";
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.gem;
+            pictureBox5.Location = new Point(327, 114);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(166, 87);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 17;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 24F);
+            label1.Location = new Point(374, 136);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 45);
+            label1.TabIndex = 18;
+            label1.Text = "10k";
+            label1.Click += label1_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.Control;
+            button1.FlatAppearance.BorderColor = Color.FromArgb(64, 0, 64);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(2, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 19;
+            button1.Text = " ";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            button1.MouseDown += button1_MouseDown;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 519);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(pictureBox5);
             Controls.Add(skinLbl);
             Controls.Add(gambleBtn);
             Controls.Add(trackBar1);
@@ -272,6 +318,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -296,6 +343,9 @@
         private Button gambleBtn;
         private TrackBar trackBar1;
         private Label skinLbl;
+        private PictureBox pictureBox5;
+        private Label label1;
+        private Button button1;
     }
 }
 

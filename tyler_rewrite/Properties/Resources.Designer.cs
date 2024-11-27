@@ -83,6 +83,16 @@ namespace tyler_rewrite.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gem {
+            get {
+                object obj = ResourceManager.GetObject("gem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap starpower {
             get {
                 object obj = ResourceManager.GetObject("starpower", resourceCulture);

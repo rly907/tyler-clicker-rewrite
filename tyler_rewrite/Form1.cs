@@ -23,6 +23,7 @@ namespace tyler_rewrite
         int generated = 0;
         int picked = 0;
         int clickCount = 2;
+        bool rebirth = false;
 
         public Form1()
         {
@@ -79,7 +80,12 @@ namespace tyler_rewrite
         private void timer1_Tick(object sender, EventArgs e)
         {
             score = score + auto;
+            if (rebirth == true)
+            {
+                score = score * 2;
+            }
             labelScore.Text = score.ToString();
+
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -157,6 +163,39 @@ namespace tyler_rewrite
             skinPick.Items.Add(newOption);
 
             clickCount++;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (score >= 10000)
+            {
+                score = score - 10000;
+                rebirth = true;
+                label1.Text = "✔";
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if (score >= 10000)
+            {
+                score = score - 10000;
+                rebirth = true;
+                label1.Text = "✔";
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            score = score * 10;
+            labelScore.Text = score.ToString();
+        }
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
+        {
+            //score = score * 10;
+            //labelScore.Text = score.ToString();
         }
     }
 }
