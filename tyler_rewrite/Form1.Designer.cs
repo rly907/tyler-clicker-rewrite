@@ -51,6 +51,7 @@
             pictureBox5 = new PictureBox();
             label1 = new Label();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -213,7 +214,7 @@
             skinPick.FormattingEnabled = true;
             skinPick.Location = new Point(173, 259);
             skinPick.Name = "skinPick";
-            skinPick.Size = new Size(129, 23);
+            skinPick.Size = new Size(82, 23);
             skinPick.TabIndex = 13;
             // 
             // gambleBtn
@@ -282,11 +283,21 @@
             button1.Click += button1_Click;
             button1.MouseDown += button1_MouseDown;
             // 
+            // button2
+            // 
+            button2.Location = new Point(261, 259);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 20;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 519);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(pictureBox5);
@@ -346,6 +357,7 @@
         private PictureBox pictureBox5;
         private Label label1;
         private Button button1;
+        private Button button2;
     }
 }
 

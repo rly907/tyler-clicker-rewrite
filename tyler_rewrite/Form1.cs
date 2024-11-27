@@ -25,6 +25,8 @@ namespace tyler_rewrite
         int clickCount = 2;
         bool rebirth = false;
 
+        int skin = 1;
+
         public Form1()
         {
             InitializeComponent();

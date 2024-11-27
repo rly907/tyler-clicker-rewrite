@@ -124,13 +124,46 @@
   <data name="starpower" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\starpower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Coins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Coins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gadget" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gadget.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
