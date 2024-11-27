@@ -43,11 +43,17 @@
             pictureBox4 = new PictureBox();
             comboBox1 = new ComboBox();
             btnLoad = new Button();
+            skinBtn = new Button();
+            skinPick = new ComboBox();
+            gambleBtn = new Button();
+            trackBar1 = new TrackBar();
+            skinLbl = new Label();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             SuspendLayout();
             // 
             // webView21
@@ -98,7 +104,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = tyler_rewrite.Properties.Resources.Coins;
+            pictureBox2.Image = Properties.Resources.Coins;
             pictureBox2.Location = new Point(513, 32);
             pictureBox2.Margin = new Padding(4, 3, 4, 3);
             pictureBox2.Name = "pictureBox2";
@@ -109,7 +115,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = tyler_rewrite.Properties.Resources.tyler1;
+            pictureBox1.Image = Properties.Resources.tyler1;
             pictureBox1.Location = new Point(88, 45);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
@@ -121,7 +127,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = tyler_rewrite.Properties.Resources.starpower;
+            pictureBox3.Image = Properties.Resources.starpower;
             pictureBox3.Location = new Point(513, 97);
             pictureBox3.Margin = new Padding(4, 3, 4, 3);
             pictureBox3.Name = "pictureBox3";
@@ -156,7 +162,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = tyler_rewrite.Properties.Resources.gadget;
+            pictureBox4.Image = Properties.Resources.gadget;
             pictureBox4.Location = new Point(686, 97);
             pictureBox4.Margin = new Padding(4, 3, 4, 3);
             pictureBox4.Name = "pictureBox4";
@@ -187,11 +193,62 @@
             btnLoad.UseVisualStyleBackColor = true;
             btnLoad.Click += btnLoad_Click;
             // 
+            // skinBtn
+            // 
+            skinBtn.Location = new Point(88, 258);
+            skinBtn.Name = "skinBtn";
+            skinBtn.Size = new Size(79, 23);
+            skinBtn.TabIndex = 12;
+            skinBtn.Text = "Skin Unlock";
+            skinBtn.UseVisualStyleBackColor = true;
+            skinBtn.Click += skinBtn_Click;
+            // 
+            // skinPick
+            // 
+            skinPick.FormattingEnabled = true;
+            skinPick.Location = new Point(173, 259);
+            skinPick.Name = "skinPick";
+            skinPick.Size = new Size(129, 23);
+            skinPick.TabIndex = 13;
+            // 
+            // gambleBtn
+            // 
+            gambleBtn.Location = new Point(431, 67);
+            gambleBtn.Name = "gambleBtn";
+            gambleBtn.Size = new Size(75, 23);
+            gambleBtn.TabIndex = 14;
+            gambleBtn.Text = "Gamble";
+            gambleBtn.UseVisualStyleBackColor = true;
+            gambleBtn.Click += gambleBtn_Click;
+            // 
+            // trackBar1
+            // 
+            trackBar1.Location = new Point(431, 32);
+            trackBar1.Maximum = 4;
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new Size(75, 45);
+            trackBar1.TabIndex = 15;
+            // 
+            // skinLbl
+            // 
+            skinLbl.AutoSize = true;
+            skinLbl.Font = new Font("Segoe UI", 12F);
+            skinLbl.Location = new Point(88, 284);
+            skinLbl.Name = "skinLbl";
+            skinLbl.Size = new Size(37, 21);
+            skinLbl.TabIndex = 16;
+            skinLbl.Text = "100";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 519);
+            Controls.Add(skinLbl);
+            Controls.Add(gambleBtn);
+            Controls.Add(trackBar1);
+            Controls.Add(skinPick);
+            Controls.Add(skinBtn);
             Controls.Add(btnLoad);
             Controls.Add(comboBox1);
             Controls.Add(autoLbl);
@@ -214,6 +271,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,6 +291,11 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnLoad;
+        private Button skinBtn;
+        private ComboBox skinPick;
+        private Button gambleBtn;
+        private TrackBar trackBar1;
+        private Label skinLbl;
     }
 }
 

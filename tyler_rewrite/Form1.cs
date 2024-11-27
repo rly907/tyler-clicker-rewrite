@@ -18,6 +18,11 @@ namespace tyler_rewrite
         int multPrice = 10;
         int auto = 0;
         int autoPrice = 20;
+        int skinPrice = 100;
+        Random rand = new Random();
+        int generated = 0;
+        int picked = 0;
+        int clickCount = 2;
 
         public Form1()
         {
@@ -43,11 +48,32 @@ namespace tyler_rewrite
             { 14, "https://www.google.com/" },
         };
 
+
+        private Dictionary<int, string> skins = new Dictionary<int, string>()
+        {
+            { 0, "" },
+            { 1, "" },
+            { 2, "" },
+            { 3, "" },
+            { 4, "" },
+            { 5, "" },
+            { 6, "" },
+            { 7, "" },
+            { 8, "" },
+            { 9, "" },
+            { 10,"" },
+            { 11, "" },
+            { 12, "" },
+            { 13, "" },
+            { 14, "" },
+        };
+
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Interval = 1000; // 1 second
             timer1.Tick += timer1_Tick;
             timer1.Start();
+            skinPick.Items.Add("Skin 1");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -96,6 +122,41 @@ namespace tyler_rewrite
             {
                 webView21.Source = new Uri(websiteUrls[selectedIndex]);
             }
+        }
+
+        private void gambleBtn_Click(object sender, EventArgs e)
+        {
+            generated = rand.Next(0, 4);
+            picked = trackBar1.Value;
+            if (generated == picked)
+            {
+                score = score * 3;
+            }
+            else
+            {
+                score = 0;
+            }
+            labelScore.Text = score.ToString();
+        }
+
+        private void skinBtn_Click(object sender, EventArgs e)
+        {
+            if (score >= skinPrice)
+            {
+                score = score - skinPrice;
+                skinPrice = skinPrice + 100;
+                labelScore.Text = score.ToString();
+                skinLbl.Text = skinPrice.ToString();
+                AddSkin();
+            }
+        }
+        private void AddSkin()
+        {
+            string newOption = "Skin " + clickCount;
+
+            skinPick.Items.Add(newOption);
+
+            clickCount++;
         }
     }
 }
